@@ -1,0 +1,193 @@
+.create-post-form {
+  max-width: 800px;
+  margin: 40px auto;
+}
+
+.create-post-form input {
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.editor-container {
+  background: white;
+}
+
+.ql-container {
+  min-height: 250px;
+  font-size: 1.1rem;
+}
+
+.home-page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.post-card {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 25px;
+  margin-bottom: 40px;
+}
+
+.post-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.post-card h2 {
+  margin: 0;
+  font-size: 1.8rem;
+  color: #222;
+}
+
+.post-card .info {
+  margin: 10px 0;
+  color: #888;
+  font-size: 0.9rem;
+  font-weight: bold;
+  display: flex;
+  gap: 15px;
+}
+
+.post-card .summary {
+  line-height: 1.6;
+  color: #444;
+}
+
+@media screen and (max-width: 700px) {
+  .post-card {
+    grid-template-columns: 1fr; /* Stack on mobile */
+  }
+}
+
+.admin-controls {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.edit-btn {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.delete-btn {
+  background-color: #d9534f; /* Danger Red */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background-color: #c9302c;
+}
+
+/* Ensure the body takes full height */
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content-area {
+  flex: 1; /* This pushes the footer to the bottom */
+}
+
+.footer {
+  background-color: #1a1a1a;
+  color: #fff;
+  padding: 40px 20px 20px;
+  margin-top: 60px;
+}
+
+.footer-content {
+  max-width: 900px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 40px;
+}
+
+.footer-section h3,
+.footer-section h4 {
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.footer-section p,
+.footer-section li {
+  color: #bbb;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section a {
+  color: #bbb;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-section a:hover {
+  color: #fff;
+}
+
+.social-links {
+  display: flex;
+  gap: 15px;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #333;
+  color: #666;
+  font-size: 0.8rem;
+}
+
+.search-container {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.search-input {
+  width: 100%;
+  max-width: 500px;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border: 2px solid #eee;
+  border-radius: 25px;
+  outline: none;
+  transition: border-color 0.3s ease;
+  background-color: #f9f9f9;
+}
+
+.search-input:focus {
+  border-color: #333;
+  background-color: #fff;
+}
+
+.no-results {
+  text-align: center;
+  padding: 50px;
+  color: #888;
+  font-size: 1.2rem;
+}
